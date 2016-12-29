@@ -33,7 +33,8 @@ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflo
 
 After running this command, then simply run
 ```
-pip install tensorflow keras
+sudo pip install --upgrade $TF_BINARY_URL
+pip install keras
 ```
 So if I were installing this on my Mac OS w/ only a CPU, the set of commands would simply be
 ```
