@@ -2,9 +2,6 @@
 This a cheatsheet that will cover most of the commands/situation you will encounter in this class!
 
 
-
-
-
 ## Starting a jupyter container
 **Start a jupyter notebook container without mounting a directory**
 
@@ -33,6 +30,14 @@ Got to the NAMES column, copy the name (sharp_dijkstra in this case), then paste
 `docker stop <image-name>`
 
 For the example this would be `docker stop sharp_dijkstra`.
+
+# RENAMING AN IMAGE
+This is a really useful command so that you can organize your images. I typically use this to separate project workspaces so I can run commands like
+`docker start kaggledecal` 
+## The Command
+`docker rename <original-image-name> <new-image-name>`
+Let's say we want to rename the example image, `sharp_dijkstra`, to `notebook`. We would run the command
+`docker rename sharp_dijkstra notebook`
 
 ## Restarting a stopped Image
 Using the same image name, 
